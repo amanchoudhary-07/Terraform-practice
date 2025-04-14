@@ -36,7 +36,7 @@ resource "aws_security_group" "my_sg" {
 }
 
  resource "aws_instance" "my_instance" {
-    ami = "ami-084568db4383264d4"
+    ami = "ami-0e35ddab05955cf57"
     instance_type = "t2.micro"
     security_groups = [ aws_security_group.my_sg.name ]
     key_name = aws_key_pair.my_key.key_name
